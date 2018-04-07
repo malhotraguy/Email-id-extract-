@@ -3,6 +3,8 @@ while True:
     x=input("enter your email id: ")
     # TO extrate the correct email format
     y=re.findall('\S+@\S+[".com"]',x)
+    # Or you can use:
+    #y=re.findall('\S+@\S+\.com',x)
     #print(y)
     if not y:
             print("Invalid Email id")
